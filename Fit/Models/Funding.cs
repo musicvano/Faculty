@@ -3,6 +3,7 @@
     public class Funding
     {
         public int Id { get; set; }
-        public int Name { get; set; }
+        public string Acronym { get; set; }
+        public string Name { get; set; }
     }
 }
