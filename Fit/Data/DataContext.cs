@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Fit.Data
 {
-    public class DataContext: DbContext
+    public class DataContext : DbContext
     {
         public DbSet<Building> Buildings { get; set; }
         public DbSet<City> Cities { get; set; }
@@ -22,7 +22,7 @@ namespace Fit.Data
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Specialty> Specialties { get; set; }
         public DbSet<Status> Statuses { get; set; }
-        public DbSet<Student> Students{ get; set; }
+        public DbSet<Student> Students { get; set; }
         public DbSet<Study> Studies { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
 
