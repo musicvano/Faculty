@@ -17,7 +17,7 @@ namespace Fit.Data.Config
                 new Faculty { Id = 5, Acronym = "ММФ", Name = "Механіко-машинобудівний факультет" },
                 new Faculty { Id = 6, Acronym = "ТФ", Name = "Транспортний факультет" },
                 new Faculty { Id = 7, Acronym = "ФЕУБ", Name = "Факультет економіки та управління бізнесом" },
-                new Faculty { Id = 8, Acronym = "ФІТФ", Name = "Факультет інформаційних технологій" }
+                new Faculty { Id = 8, Acronym = "ФІТ", Name = "Факультет інформаційних технологій" }
             );
         }
     }

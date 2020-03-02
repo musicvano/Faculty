@@ -7,7 +7,7 @@ namespace Fit.GraphQL
     {
         public AppSchema(IDependencyResolver resolver) : base(resolver)
         {
-            Query = resolver.Resolve<RootQuery>();
+            Query = resolver.Resolve<AppQuery>();
         }
     }
 }
