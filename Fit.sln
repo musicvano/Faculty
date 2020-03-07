@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fit", "Fit\Fit.csproj", "{335947C2-A5FE-413A-A4A0-B8ACAD89FE5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fit.Web", "Fit.Web\Fit.Web.csproj", "{335947C2-A5FE-413A-A4A0-B8ACAD89FE5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fit.Data", "Fit.Data\Fit.Data.csproj", "{7A841448-00A2-4051-8347-50A38F303CB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fit.Core", "Fit.Core\Fit.Core.csproj", "{642A7B0B-3161-4798-BC30-21289ACE43B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{335947C2-A5FE-413A-A4A0-B8ACAD89FE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{335947C2-A5FE-413A-A4A0-B8ACAD89FE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{335947C2-A5FE-413A-A4A0-B8ACAD89FE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A841448-00A2-4051-8347-50A38F303CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A841448-00A2-4051-8347-50A38F303CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A841448-00A2-4051-8347-50A38F303CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A841448-00A2-4051-8347-50A38F303CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642A7B0B-3161-4798-BC30-21289ACE43B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642A7B0B-3161-4798-BC30-21289ACE43B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642A7B0B-3161-4798-BC30-21289ACE43B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642A7B0B-3161-4798-BC30-21289ACE43B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
