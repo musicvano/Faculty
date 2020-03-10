@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Fit.Data.Config
 {
-    public class CityConfig : IEntityTypeConfiguration<City>
+    public class LocalityConfig : IEntityTypeConfiguration<Locality>
     {
-        public void Configure(EntityTypeBuilder<City> builder)
+        public void Configure(EntityTypeBuilder<Locality> builder)
         {            
         }
     }

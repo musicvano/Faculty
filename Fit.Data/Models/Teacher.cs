@@ -18,10 +18,10 @@ namespace Fit.Data.Models
         public string TaxId { get; set; }
         public Country Country { get; set; }
         public Region Region { get; set; }
-        public City City { get; set; }
+        public Locality City { get; set; }
         public string Street { get; set; }
         public string House { get; set; }
-        public string Appartment { get; set; }
+        public string Apartment { get; set; }
         public string PostCode { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }

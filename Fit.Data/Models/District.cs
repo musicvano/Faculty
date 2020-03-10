@@ -3,31 +3,35 @@ using System.Collections.Generic;
 
 namespace Fit.Data.Models
 {
+    // Simplified structure
+    // coutry <- region <- locality <- street
+    /*
     /// <summary>
-    /// The region (state) of the country
+    /// The district of the region
     /// </summary>
-    public class Region
+    public class District
     {
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Region name in Ukrainian
+        /// District name in Ukrainian
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// Region name in English
+        /// District name in English
         /// </summary>
         public string NameEn { get; set; }
 
         /// <summary>
-        /// The country that region belongs to
+        /// The region that district belongs to
         /// </summary>
-        public Country Country { get; set; }
+        public Region Region { get; set; }
 
         /// <summary>
-        /// Localities of the the region
+        /// Localities of the district
         /// </summary>
         public List<Locality> Localities { get; set; }
     }
+    */
 }

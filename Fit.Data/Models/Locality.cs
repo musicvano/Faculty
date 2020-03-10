@@ -4,30 +4,30 @@ using System.Collections.Generic;
 namespace Fit.Data.Models
 {
     /// <summary>
-    /// The region (state) of the country
+    /// The locality (city, town, village) of the district
     /// </summary>
-    public class Region
+    public class Locality
     {
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Region name in Ukrainian
+        /// City name in Ukrainian
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// Region name in English
+        /// Locality name in English
         /// </summary>
         public string NameEn { get; set; }
 
         /// <summary>
-        /// The country that region belongs to
+        /// The region that locality belongs to
         /// </summary>
-        public Country Country { get; set; }
+        public Region Region { get; set; }
 
         /// <summary>
-        /// Localities of the the region
+        /// Streets of the locality
         /// </summary>
-        public List<Locality> Localities { get; set; }
+        public List<Street> Streets { get; set; }
     }
 }

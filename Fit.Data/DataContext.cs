@@ -9,7 +9,6 @@ namespace Fit.Data
         private readonly string connectionString;
 
         public DbSet<Building> Buildings { get; set; }
-        public DbSet<City> Cities { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Degree> Degrees { get; set; }
         public DbSet<Department> Departments { get; set; }
@@ -17,6 +16,7 @@ namespace Fit.Data
         public DbSet<Faculty> Faculties { get; set; }
         public DbSet<Funding> Fundings { get; set; }
         public DbSet<Group> Groups { get; set; }
+        public DbSet<Locality> Localities { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Rank> Ranks { get; set; }
         public DbSet<Region> Regions { get; set; }
@@ -39,7 +39,7 @@ namespace Fit.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new BuildingConfig());
-            modelBuilder.ApplyConfiguration(new CityConfig());
+            modelBuilder.ApplyConfiguration(new LocalityConfig());
             modelBuilder.ApplyConfiguration(new CountryConfig());
             modelBuilder.ApplyConfiguration(new DegreeConfig());
             modelBuilder.ApplyConfiguration(new DepartmentConfig());
