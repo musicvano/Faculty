@@ -148,10 +148,7 @@ namespace Fit.GraphQL
                 resolve: context =>
                 {
                     return data.Students
-                        .Include(s => s.Country)
-                        .Include(s => s.Region)
-                        .Include(s => s.Region)
-                        .Include(s => s.City)
+                        .Include(s => s.Address).ThenInclude(a => a.Street)
                         .Include(s => s.Funding)
                         .Include(s => s.Study)
                         .Include(s => s.Status)

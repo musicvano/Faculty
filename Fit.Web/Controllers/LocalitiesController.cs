@@ -11,48 +11,48 @@ namespace Fit.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CitiesController : ControllerBase
+    public class LocalitiesController : ControllerBase
     {
         private readonly DataContext context;
 
-        public CitiesController(DataContext context)
+        public LocalitiesController(DataContext context)
         {
             this.context = context;
         }
 
-        // GET: api/Cities
+        // GET: api/Localities
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<City>>> GetCities()
+        public async Task<ActionResult<IEnumerable<Locality>>> GetLocalities()
         {
-            return await context.Cities.ToListAsync();
+            return await context.Localities.ToListAsync();
         }
 
-        // GET: api/Cities/5
+        // GET: api/Localities/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<City>> GetCity(int id)
+        public async Task<ActionResult<Locality>> GetLocality(int id)
         {
-            var city = await context.Cities.FindAsync(id);
+            var Locality = await context.Localities.FindAsync(id);
 
-            if (city == null)
+            if (Locality == null)
             {
                 return NotFound();
             }
 
-            return city;
+            return Locality;
         }
 
-        // PUT: api/Cities/5
+        // PUT: api/Localities/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCity(Guid id, City city)
+        public async Task<IActionResult> PutLocality(Guid id, Locality Locality)
         {
-            if (id != city.Id)
+            if (id != Locality.Id)
             {
                 return BadRequest();
             }
 
-            context.Entry(city).State = EntityState.Modified;
+            context.Entry(Locality).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace Fit.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CityExists(id))
+                if (!LocalityExists(id))
                 {
                     return NotFound();
                 }
@@ -73,37 +73,37 @@ namespace Fit.Controllers
             return NoContent();
         }
 
-        // POST: api/Cities
+        // POST: api/Localities
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<City>> PostCity(City city)
+        public async Task<ActionResult<Locality>> PostLocality(Locality Locality)
         {
-            context.Cities.Add(city);
+            context.Localities.Add(Locality);
             await context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCity", new { id = city.Id }, city);
+            return CreatedAtAction("GetLocality", new { id = Locality.Id }, Locality);
         }
 
-        // DELETE: api/Cities/5
+        // DELETE: api/Localities/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<City>> DeleteCity(int id)
+        public async Task<ActionResult<Locality>> DeleteLocality(int id)
         {
-            var city = await context.Cities.FindAsync(id);
-            if (city == null)
+            var Locality = await context.Localities.FindAsync(id);
+            if (Locality == null)
             {
                 return NotFound();
             }
 
-            context.Cities.Remove(city);
+            context.Localities.Remove(Locality);
             await context.SaveChangesAsync();
 
-            return city;
+            return Locality;
         }
 
-        private bool CityExists(Guid id)
+        private bool LocalityExists(Guid id)
         {
-            return context.Cities.Any(e => e.Id == id);
+            return context.Localities.Any(e => e.Id == id);
         }
     }
 }

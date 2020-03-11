@@ -17,12 +17,7 @@ namespace Fit.Data.Models
         public string PassportSerial { get; set; }
         public string PassportNumber { get; set; }
         public string TaxId { get; set; }
-        public Country Country { get; set; }
-        public Region Region { get; set; }
-        public Locality City { get; set; }
-        public string Street { get; set; }
-        public string House { get; set; }
-        public string Apartment { get; set; }
+        public Address Address { get; set; }
         public string PostCode { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }

@@ -20,13 +20,7 @@ namespace Fit.GraphQL.Types
             Field(x => x.PassportSerial);
             Field(x => x.PassportNumber);
             Field(x => x.TaxId);
-            Field(x => x.Country, type: typeof(CountryType)).Description("The country of the registration");
-            Field(x => x.Region, type: typeof(RegionType)).Description("The region of the registration");
-            Field(x => x.City, type: typeof(CityType)).Description("The city of the registration");
-            Field(x => x.Street);
-            Field(x => x.House);
-            Field(x => x.Appartment);
-            Field(x => x.PostCode);
+            Field(x => x.Address, type: typeof(AddressType)).Description("Home address");
             Field(x => x.Phone).Description("Phone number");
             Field(x => x.Email).Description("Email address");
             Field(x => x.Telegram).Description("Telegram account"); ;

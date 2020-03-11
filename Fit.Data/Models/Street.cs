@@ -20,6 +20,11 @@ namespace Fit.Data.Models
         public string NameEn { get; set; }
 
         /// <summary>
+        /// Zip code of national post service
+        /// </summary>
+        public string Postcode { get; set; }
+
+        /// <summary>
         /// The locality that street belongs to
         /// </summary>
         public Locality Locality { get; set; }

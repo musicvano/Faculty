@@ -8,6 +8,7 @@ namespace Fit.Data
     {
         private readonly string connectionString;
 
+        public DbSet<Address> Addresses { get; set; }
         public DbSet<Building> Buildings { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Degree> Degrees { get; set; }
@@ -26,6 +27,7 @@ namespace Fit.Data
         public DbSet<Status> Statuses { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Study> Studies { get; set; }
+        public DbSet<Street> Streets { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
 
         public DataContext(string connectionString)
@@ -38,7 +40,7 @@ namespace Fit.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new BuildingConfig());
+            /*modelBuilder.ApplyConfiguration(new BuildingConfig());
             modelBuilder.ApplyConfiguration(new LocalityConfig());
             modelBuilder.ApplyConfiguration(new CountryConfig());
             modelBuilder.ApplyConfiguration(new DegreeConfig());
@@ -51,7 +53,7 @@ namespace Fit.Data
             modelBuilder.ApplyConfiguration(new RegionConfig());
             modelBuilder.ApplyConfiguration(new SpecialtyConfig());
             modelBuilder.ApplyConfiguration(new StudentConfig());
-            modelBuilder.ApplyConfiguration(new StudyConfig());
+            modelBuilder.ApplyConfiguration(new StudyConfig());*/
         }
     }
 }

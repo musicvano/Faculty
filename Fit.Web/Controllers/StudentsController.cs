@@ -25,9 +25,7 @@ namespace Fit.Controllers
         public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
             return await context.Students
-                .Include(s => s.Country)
-                .Include(s => s.Region)
-                .Include(s => s.City)
+                .Include(s => s.Address).ThenInclude(a => a.Street)
                 .Include(s => s.Funding)
                 .Include(s => s.Study)
                 .Include(s => s.Status)

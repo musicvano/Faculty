@@ -9,8 +9,8 @@ namespace Fit.GraphQL.Types
         {
             Name = "Region";
             Field(x => x.Id, type: typeof(IdGraphType)).Description("The ID of the region");
-            Field(x => x.Name).Description("The name of the region");
-            Field(x => x.Acronym).Description("Short name of the region");
+            Field(x => x.Name).Description("The name of the region in Ukrainian");
+            Field(x => x.NameEn).Description("The name of the region in English");
         }
     }
 }
