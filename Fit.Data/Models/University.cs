@@ -1,33 +1,44 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Fit.Data.Models
 {
     /// <summary>
-    /// The department of the faculty
+    /// The university, institution or academy
     /// </summary>
-    public class Department
+    public class University
     {
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Department name in Ukrainian
+        /// University name in Ukrainian
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// Department name in English
+        /// University name in English
         /// </summary>
         public string NameEn { get; set; }
 
         /// <summary>
-        /// Department short name
+        /// Official university address
         /// </summary>
-        public string Acronym { get; set; }
+        public Address Address { get; set; }
 
         /// <summary>
-        /// The logo of the department
+        /// The logo of the university
         /// </summary>
         public string Logo { get; set; }
+
+        /// <summary>
+        /// Phone number
+        /// </summary>
+        public string Phone { get; set; }
+
+        /// <summary>
+        /// Fax number
+        /// </summary>
+        public string Fax { get; set; }
 
         /// <summary>
         /// Official website URL
@@ -40,13 +51,13 @@ namespace Fit.Data.Models
         public string Email { get; set; }
 
         /// <summary>
-        /// Phone number
+        /// Buildings of the university
         /// </summary>
-        public string Phone { get; set; }
+        public List<Building> Buildings { get; set; }
 
         /// <summary>
-        /// The faculty that department belongs to
+        /// Faculties of the university
         /// </summary>
-        public Faculty Faculty { get; set; }
+        public List<Faculty> Faculties { get; set; }
     }
 }

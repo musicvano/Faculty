@@ -8,5 +8,6 @@ namespace Fit.Data.Models
         public string Name { get; set; }
         public string NameEn { get; set; }
         public Address Address { get; set; }
+        public University University { get; set; }
     }
 }

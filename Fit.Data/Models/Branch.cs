@@ -1,32 +1,33 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Fit.Data.Models
 {
     /// <summary>
-    /// The specialty, program subject area in higher education
+    /// The branch of knowledge
     /// </summary>
-    public class Specialty
+    public class Branch
     {
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Specialty code
+        /// Branch code
         /// </summary>
         public string Code { get; set; }
 
         /// <summary>
-        /// Specialty name in ukrainian
+        /// Branch name in Ukrainian
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// Specialty name in English
+        /// Branch name in English
         /// </summary>
         public string NameEn { get; set; }
 
         /// <summary>
-        /// The branch that the specialty belongs to
+        /// Specialties of the branch
         /// </summary>
-        public Branch Branch { get; set; }
+        public List<Specialty> Specialties { get; set; }
     }
 }
