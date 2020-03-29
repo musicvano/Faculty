@@ -1,6 +1,6 @@
 using System;
 
-namespace Fit.Models
+namespace Fit.Web.Models
 {
     public class ErrorViewModel
     {

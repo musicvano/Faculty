@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "name": "fit.knu.edu.ua",
+  "private": true,
+  "devDependencies": {
+    "bulma": "^0.8.1",
+    "feather-icons": "^4.26.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
